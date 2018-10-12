@@ -190,7 +190,7 @@ def player_stats(name)
     players = details[:players]
     players.each do |val|
       if name == val[:name]
-        val
+        players[:]
       end
     end
   end
